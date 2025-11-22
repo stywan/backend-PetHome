@@ -1,0 +1,72 @@
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        # User Service Auth Routes
+        - id: user-service-auth
+          uri: lb://pethome-user-service
+          predicates:
+            - Path=/api/auth,/api/auth/**
+          filters:
+            - RewritePath=/api/auth(?<segment>.*), /auth${segment}
+
+        # User Service Routes
+        - id: user-service
+          uri: lb://pethome-user-service
+          predicates:
+            - Path=/api/users,/api/users/**
+          filters:
+            - RewritePath=/api/users(?<segment>.*), /users${segment}
+
+        # Veterinarian Service Routes
+        - id: veterinarian-service
+          uri: lb://pethome-veterinarian-service
+          predicates:
+            - Path=/api/veterinarians,/api/veterinarians/**
+          filters:
+            - RewritePath=/api/veterinarians(?<segment>.*), /veterinarians${segment}
+
+        # Pet Service Routes
+        - id: pet-service
+          uri: lb://pethome-pet-service
+          predicates:
+            - Path=/api/pets,/api/pets/**
+          filters:
+            - RewritePath=/api/pets(?<segment>.*), /pets${segment}
+
+        # Appointment Service Routes
+        - id: appointment-service
+          uri: lb://pethome-appointment-service
+          predicates:
+            - Path=/api/appointments/**,/api/services/**
+          filters:
+            - RewritePath=/api/(?<segment>.*), /${segment}
+
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowed-origins:
+              - "*"
+            allowed-methods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+              - PATCH
+            allowed-headers: "*"
+            allow-credentials: true
+            max-age: 3600
+
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    prefer-ip-address: false
+    hostname: api-gateway

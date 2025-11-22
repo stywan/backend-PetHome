@@ -1,0 +1,837 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< cl.duoc:pethome-appointment-service >-----------------
+[INFO] Building pethome-appointment-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.5:run (default-cli) > test-compile @ pethome-appointment-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ pethome-appointment-service ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ pethome-appointment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ pethome-appointment-service ---
+[INFO] skip non existing resourceDirectory /Users/stywan1/Downloads/pethome-backend/pethome-appointment-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ pethome-appointment-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.5:run (default-cli) < test-compile @ pethome-appointment-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.5:run (default-cli) @ pethome-appointment-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-11-17 19:42:25 - Starting PethomeAppointmentServiceApplication using Java 25.0.1 with PID 79971 (/Users/stywan1/Downloads/pethome-backend/pethome-appointment-service/target/classes started by stywan1 in /Users/stywan1/Downloads/pethome-backend/pethome-appointment-service)
+2025-11-17 19:42:25 - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-11-17 19:42:25 - The following 1 profile is active: "docker"
+2025-11-17 19:42:25 - Fetching config from server at : http://localhost:8888
+2025-11-17 19:42:25 - Located environment: name=pethome-appointment-service, profiles=[default], label=null, version=null, state=null
+2025-11-17 19:42:25 - Fetching config from server at : http://localhost:8888
+2025-11-17 19:42:25 - Located environment: name=pethome-appointment-service, profiles=[docker], label=null, version=null, state=null
+2025-11-17 19:42:25 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-17 19:42:26 - Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interface.
+2025-11-17 19:42:26 - BeanFactory id=53051cbf-a217-3aab-ac8d-4a8f7d147fe1
+2025-11-17 19:42:26 - Tomcat initialized with port 8084 (http)
+2025-11-17 19:42:26 - Starting service [Tomcat]
+2025-11-17 19:42:26 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-11-17 19:42:26 - Initializing Spring embedded WebApplicationContext
+2025-11-17 19:42:26 - Root WebApplicationContext: initialization completed in 1126 ms
+2025-11-17 19:42:26 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-17 19:42:26 - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-11-17 19:42:26 - HHH000026: Second-level cache disabled
+2025-11-17 19:42:26 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-17 19:42:26 - HikariPool-1 - Starting...
+2025-11-17 19:42:28 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@af57949
+2025-11-17 19:42:28 - HikariPool-1 - Start completed.
+2025-11-17 19:42:28 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-17 19:42:29 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-17 19:42:29 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-17 19:42:30 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17 19:42:30 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-11-17 19:42:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-17 19:42:31 - Eureka HTTP Client uses RestTemplate.
+2025-11-17 19:42:31 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-17 19:42:31 - Exposing 3 endpoints beneath base path '/actuator'
+2025-11-17 19:42:31 - Setting initial instance status as: STARTING
+2025-11-17 19:42:31 - Initializing Eureka in region us-east-1
+2025-11-17 19:42:31 - Resolving eureka endpoints via configuration
+2025-11-17 19:42:31 - Disable delta property : false
+2025-11-17 19:42:31 - Single vip registry refresh property : null
+2025-11-17 19:42:31 - Force full registry fetch : false
+2025-11-17 19:42:31 - Application is null : false
+2025-11-17 19:42:31 - Registered Applications size is zero : true
+2025-11-17 19:42:31 - Application version is -1: true
+2025-11-17 19:42:31 - Getting all instance registry info from the eureka server
+2025-11-17 19:42:31 - The response status is 200
+2025-11-17 19:42:31 - Starting heartbeat executor: renew interval is: 30
+2025-11-17 19:42:31 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-17 19:42:31 - Discovery Client initialized at timestamp 1763419351831 with initial instances count: 4
+2025-11-17 19:42:31 - Registering application PETHOME-APPOINTMENT-SERVICE with eureka with status UP
+2025-11-17 19:42:31 - Saw local status change event StatusChangeEvent [timestamp=1763419351834, current=UP, previous=STARTING]
+2025-11-17 19:42:31 - DiscoveryClient_PETHOME-APPOINTMENT-SERVICE/10.31.51.176:pethome-appointment-service:8084: registering service...
+2025-11-17 19:42:31 - Tomcat started on port 8084 (http) with context path '/'
+2025-11-17 19:42:31 - Updating port to 8084
+2025-11-17 19:42:31 - Started PethomeAppointmentServiceApplication in 7.173 seconds (process running for 7.599)
+2025-11-17 19:42:31 - DiscoveryClient_PETHOME-APPOINTMENT-SERVICE/10.31.51.176:pethome-appointment-service:8084 - registration status: 204
+2025-11-17 19:47:31 - Resolving eureka endpoints via configuration
+2025-11-17 19:52:31 - Resolving eureka endpoints via configuration
+2025-11-17 19:57:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:00:55 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17 20:00:55 - Initializing Servlet 'dispatcherServlet'
+2025-11-17 20:00:55 - Completed initialization in 111 ms
+2025-11-17 20:00:56 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:00:56 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:02:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:03:44 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:03:44 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:04:23 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:04:23 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:06:32 - GET /appointments/vet/1 - Fetching appointments
+2025-11-17 20:06:32 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+2025-11-17 20:07:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:08:25 - GET /appointments/vet/1 - Fetching appointments
+2025-11-17 20:08:25 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+2025-11-17 20:08:50 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:08:50 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:09:48 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:09:48 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:09:54 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:09:54 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:10:54 - POST /appointments - Creating appointment for client: 9
+2025-11-17 20:10:55 - Creating appointment for client: 9
+2025-11-17 20:10:55 - 
+    select
+        count(a1_0.id)>0 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=? 
+        and a1_0.date=? 
+        and a1_0.time=? 
+        and a1_0.status<>'cancelled'
+Hibernate: 
+    select
+        count(a1_0.id)>0 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=? 
+        and a1_0.date=? 
+        and a1_0.time=? 
+        and a1_0.status<>'cancelled'
+2025-11-17 20:10:55 - 
+    insert 
+    into
+        appointments
+        (address, cancellation_reason, cancelled_at, client_id, completed_at, created_at, date, diagnosis, duration, notes, pet_id, prescription, service_id, status, time, updated_at, veterinarian_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        appointments
+        (address, cancellation_reason, cancelled_at, client_id, completed_at, created_at, date, diagnosis, duration, notes, pet_id, prescription, service_id, status, time, updated_at, veterinarian_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-11-17 20:10:55 - Appointment created with ID: 8
+2025-11-17 20:12:23 - GET /appointments/vet/1 - Fetching appointments
+2025-11-17 20:12:23 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+2025-11-17 20:12:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:13:27 - GET /appointments/vet/1 - Fetching appointments
+2025-11-17 20:13:27 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=?
+2025-11-17 20:15:56 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:15:56 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:17:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:22:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:25:18 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:25:18 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+2025-11-17 20:27:24 - POST /appointments - Creating appointment for client: 9
+2025-11-17 20:27:24 - Creating appointment for client: 9
+2025-11-17 20:27:24 - 
+    select
+        count(a1_0.id)>0 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=? 
+        and a1_0.date=? 
+        and a1_0.time=? 
+        and a1_0.status<>'cancelled'
+Hibernate: 
+    select
+        count(a1_0.id)>0 
+    from
+        appointments a1_0 
+    where
+        a1_0.veterinarian_id=? 
+        and a1_0.date=? 
+        and a1_0.time=? 
+        and a1_0.status<>'cancelled'
+2025-11-17 20:27:24 - 
+    insert 
+    into
+        appointments
+        (address, cancellation_reason, cancelled_at, client_id, completed_at, created_at, date, diagnosis, duration, notes, pet_id, prescription, service_id, status, time, updated_at, veterinarian_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        appointments
+        (address, cancellation_reason, cancelled_at, client_id, completed_at, created_at, date, diagnosis, duration, notes, pet_id, prescription, service_id, status, time, updated_at, veterinarian_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-11-17 20:27:25 - Appointment created with ID: 9
+2025-11-17 20:27:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:32:31 - Resolving eureka endpoints via configuration
+2025-11-17 20:32:44 - GET /appointments/client/9 - Fetching appointments
+2025-11-17 20:32:44 - 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.address,
+        a1_0.cancellation_reason,
+        a1_0.cancelled_at,
+        a1_0.client_id,
+        a1_0.completed_at,
+        a1_0.created_at,
+        a1_0.date,
+        a1_0.diagnosis,
+        a1_0.duration,
+        a1_0.notes,
+        a1_0.pet_id,
+        a1_0.prescription,
+        a1_0.service_id,
+        a1_0.status,
+        a1_0.time,
+        a1_0.updated_at,
+        a1_0.veterinarian_id 
+    from
+        appointments a1_0 
+    where
+        a1_0.client_id=?
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  53:02 min
+[INFO] Finished at: 2025-11-17T20:35:25-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.5:run (default-cli) on project pethome-appointment-service: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: pethome-appointment-service
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:dbpethome.c58egkiimr78.us-east-1.rds.amazonaws.com}:${DB_PORT:5432}/${DB_NAME:pethome}
+    driver-class-name: org.postgresql.Driver
+    username: ${DB_USERNAME:pethome_admin}
+    password: ${DB_PASSWORD:0zMGiIYDmCf0g94iS0ex}
+  h2:
+    console:
+      enabled: false
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 8084
+
+# Feign configuration for calling other microservices
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+
+# Logging
+logging:
+  level:
+    cl.duoc: DEBUG
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG

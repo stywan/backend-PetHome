@@ -1,0 +1,123 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< cl.duoc:config-server >------------------------
+[INFO] Building config-server 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.5:run (default-cli) > test-compile @ config-server >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ config-server ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] Copying 10 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ config-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ config-server ---
+[INFO] skip non existing resourceDirectory /Users/stywan1/Downloads/pethome-backend/config-server/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ config-server ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.5.5:run (default-cli) < test-compile @ config-server <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.5:run (default-cli) @ config-server ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-11-17 19:41:31 - Starting ConfigServerApplication using Java 25.0.1 with PID 79814 (/Users/stywan1/Downloads/pethome-backend/config-server/target/classes started by stywan1 in /Users/stywan1/Downloads/pethome-backend/config-server)
+2025-11-17 19:41:31 - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-11-17 19:41:31 - The following 1 profile is active: "native"
+2025-11-17 19:41:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-17 19:41:32 - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2025-11-17 19:41:32 - BeanFactory id=8012a485-cdf6-3c2f-be43-83b1d54a2045
+2025-11-17 19:41:32 - Tomcat initialized with port 8888 (http)
+2025-11-17 19:41:32 - Starting service [Tomcat]
+2025-11-17 19:41:32 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-11-17 19:41:33 - Initializing Spring embedded WebApplicationContext
+2025-11-17 19:41:33 - Root WebApplicationContext: initialization completed in 1063 ms
+2025-11-17 19:41:33 - HikariPool-1 - Starting...
+2025-11-17 19:41:33 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b7b3baf5-282d-483d-ad7e-935a102fcb4b user=SA
+2025-11-17 19:41:33 - HikariPool-1 - Start completed.
+2025-11-17 19:41:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-17 19:41:33 - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-11-17 19:41:33 - HHH000026: Second-level cache disabled
+2025-11-17 19:41:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-17 19:41:33 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-17 19:41:33 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-17 19:41:33 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-17 19:41:33 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-17 19:41:34 - Tomcat started on port 8888 (http) with context path '/'
+2025-11-17 19:41:34 - Started ConfigServerApplication in 2.865 seconds (process running for 3.342)
+2025-11-17 19:41:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-17 19:41:39 - Initializing Servlet 'dispatcherServlet'
+2025-11-17 19:41:39 - Completed initialization in 4 ms
+2025-11-17 19:41:39 - Adding property source: Config resource 'class path resource [config/eureka-server.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:39 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:39 - Adding property source: Config resource 'class path resource [config/eureka-server.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:39 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:47 - Adding property source: Config resource 'class path resource [config/api-gateway.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:47 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:47 - Adding property source: Config resource 'class path resource [config/api-gateway.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:47 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:53 - Adding property source: Config resource 'class path resource [config/pethome-user-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:53 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:53 - Adding property source: Config resource 'class path resource [config/pethome-user-service-docker.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:53 - Adding property source: Config resource 'class path resource [config/pethome-user-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:41:53 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:05 - Adding property source: Config resource 'class path resource [config/pethome-veterinarian-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:05 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:05 - Adding property source: Config resource 'class path resource [config/pethome-veterinarian-service-docker.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:05 - Adding property source: Config resource 'class path resource [config/pethome-veterinarian-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:05 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:15 - Adding property source: Config resource 'class path resource [config/pethome-pet-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/pethome-pet-service-docker.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/pethome-pet-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/pethome-pet-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/pethome-pet-service-docker.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/pethome-pet-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/pethome-pet-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:16 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:25 - Adding property source: Config resource 'class path resource [config/pethome-appointment-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:25 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:25 - Adding property source: Config resource 'class path resource [config/pethome-appointment-service-docker.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:25 - Adding property source: Config resource 'class path resource [config/pethome-appointment-service.yml]' via location 'classpath:/config/'
+2025-11-17 19:42:25 - Adding property source: Config resource 'class path resource [config/application.yml]' via location 'classpath:/config/'
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  53:55 min
+[INFO] Finished at: 2025-11-17T20:35:25-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.5:run (default-cli) on project config-server: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

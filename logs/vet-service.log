@@ -1,0 +1,247 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< cl.duoc:pethome-veterinarian-service >----------------
+[INFO] Building pethome-veterinarian-service 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.5.5:run (default-cli) > test-compile @ pethome-veterinarian-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ pethome-veterinarian-service ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.14.0:compile (default-compile) @ pethome-veterinarian-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 15 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ pethome-veterinarian-service ---
+[INFO] skip non existing resourceDirectory /Users/stywan1/Downloads/pethome-backend/pethome-veterinarian-service/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ pethome-veterinarian-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.5.5:run (default-cli) < test-compile @ pethome-veterinarian-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.5.5:run (default-cli) @ pethome-veterinarian-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.5)
+
+2025-11-07 04:35:13 - Starting PethomeVeterinarianServiceApplication using Java 25.0.1 with PID 49039 (/Users/stywan1/Downloads/pethome-backend/pethome-veterinarian-service/target/classes started by stywan1 in /Users/stywan1/Downloads/pethome-backend/pethome-veterinarian-service)
+2025-11-07 04:35:13 - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-11-07 04:35:13 - No active profile set, falling back to 1 default profile: "default"
+2025-11-07 04:35:13 - Fetching config from server at : http://localhost:8888
+2025-11-07 04:35:13 - Located environment: name=pethome-veterinarian-service, profiles=[default], label=null, version=null, state=null
+2025-11-07 04:35:13 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-07 04:35:13 - Finished Spring Data repository scanning in 89 ms. Found 2 JPA repository interfaces.
+2025-11-07 04:35:13 - BeanFactory id=81f89cb8-c20a-3033-8f75-7f1cca7fad98
+2025-11-07 04:35:14 - Tomcat initialized with port 8082 (http)
+2025-11-07 04:35:14 - Starting service [Tomcat]
+2025-11-07 04:35:14 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-11-07 04:35:14 - Initializing Spring embedded WebApplicationContext
+2025-11-07 04:35:14 - Root WebApplicationContext: initialization completed in 995 ms
+2025-11-07 04:35:14 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-07 04:35:14 - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-11-07 04:35:14 - HHH000026: Second-level cache disabled
+2025-11-07 04:35:14 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-07 04:35:14 - HikariPool-1 - Starting...
+2025-11-07 04:35:14 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:veterinariandb user=SA
+2025-11-07 04:35:14 - HikariPool-1 - Start completed.
+2025-11-07 04:35:14 - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-07 04:35:14 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-11-07 04:35:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    drop table if exists veterinarian_schedules cascade 
+Hibernate: 
+    drop table if exists veterinarians cascade 
+Hibernate: 
+    create table veterinarian_schedules (
+        end_time time(6) not null,
+        is_active boolean not null,
+        start_time time(6) not null,
+        id bigint generated by default as identity,
+        veterinarian_id bigint not null,
+        day_of_week enum ('FRIDAY','MONDAY','SATURDAY','SUNDAY','THURSDAY','TUESDAY','WEDNESDAY') not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table veterinarians (
+        experience_years integer,
+        is_available boolean not null,
+        rating float(53) not null,
+        created_at timestamp(6) not null,
+        id bigint generated by default as identity,
+        updated_at timestamp(6),
+        user_id bigint not null unique,
+        photo varchar(500),
+        bio TEXT,
+        clinic_address varchar(255),
+        clinic_name varchar(255),
+        license_number varchar(255) not null unique,
+        specialty varchar(255) not null,
+        working_hours varchar(255),
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists veterinarian_schedules 
+       add constraint FKj3q5lbyc86d50cqn1otq20ucn 
+       foreign key (veterinarian_id) 
+       references veterinarians
+2025-11-07 04:35:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-07 04:35:15 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-07 04:35:15 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:veterinariandb'
+2025-11-07 04:35:15 - Eureka HTTP Client uses RestTemplate.
+2025-11-07 04:35:15 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-07 04:35:15 - Exposing 3 endpoints beneath base path '/actuator'
+2025-11-07 04:35:16 - Setting initial instance status as: STARTING
+2025-11-07 04:35:16 - Initializing Eureka in region us-east-1
+2025-11-07 04:35:16 - Resolving eureka endpoints via configuration
+2025-11-07 04:35:16 - Disable delta property : false
+2025-11-07 04:35:16 - Single vip registry refresh property : null
+2025-11-07 04:35:16 - Force full registry fetch : false
+2025-11-07 04:35:16 - Application is null : false
+2025-11-07 04:35:16 - Registered Applications size is zero : true
+2025-11-07 04:35:16 - Application version is -1: true
+2025-11-07 04:35:16 - Getting all instance registry info from the eureka server
+2025-11-07 04:35:16 - The response status is 200
+2025-11-07 04:35:16 - Starting heartbeat executor: renew interval is: 30
+2025-11-07 04:35:16 - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-11-07 04:35:16 - Discovery Client initialized at timestamp 1762500916280 with initial instances count: 0
+2025-11-07 04:35:16 - Registering application PETHOME-VETERINARIAN-SERVICE with eureka with status UP
+2025-11-07 04:35:16 - Saw local status change event StatusChangeEvent [timestamp=1762500916283, current=UP, previous=STARTING]
+2025-11-07 04:35:16 - DiscoveryClient_PETHOME-VETERINARIAN-SERVICE/192.168.1.86:pethome-veterinarian-service:8082: registering service...
+2025-11-07 04:35:16 - Tomcat started on port 8082 (http) with context path '/'
+2025-11-07 04:35:16 - Updating port to 8082
+2025-11-07 04:35:16 - Started PethomeVeterinarianServiceApplication in 3.638 seconds (process running for 3.982)
+2025-11-07 04:35:16 - DiscoveryClient_PETHOME-VETERINARIAN-SERVICE/192.168.1.86:pethome-veterinarian-service:8082 - registration status: 204
+2025-11-07 04:35:46 - Disable delta property : false
+2025-11-07 04:35:46 - Single vip registry refresh property : null
+2025-11-07 04:35:46 - Force full registry fetch : false
+2025-11-07 04:35:46 - Application is null : false
+2025-11-07 04:35:46 - Registered Applications size is zero : true
+2025-11-07 04:35:46 - Application version is -1: false
+2025-11-07 04:35:46 - Getting all instance registry info from the eureka server
+2025-11-07 04:35:46 - The response status is 200
+2025-11-07 04:36:37 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-07 04:36:37 - Initializing Servlet 'dispatcherServlet'
+2025-11-07 04:36:37 - Completed initialization in 2 ms
+2025-11-07 04:40:16 - Resolving eureka endpoints via configuration
+2025-11-07 04:43:49 - POST /veterinarians - Creating veterinarian for user ID: 1
+2025-11-07 04:43:49 - Creating veterinarian for user ID: 1
+Hibernate: 
+    select
+        v1_0.id 
+    from
+        veterinarians v1_0 
+    where
+        v1_0.user_id=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        v1_0.id 
+    from
+        veterinarians v1_0 
+    where
+        v1_0.license_number=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        veterinarians
+        (bio, clinic_address, clinic_name, created_at, experience_years, is_available, license_number, photo, rating, specialty, updated_at, user_id, working_hours, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, default)
+2025-11-07 04:43:49 - Veterinarian created successfully with ID: 1
+2025-11-07 04:43:49 - Veterinarian created successfully with ID: 1
+2025-11-07 04:43:56 - GET /veterinarians - Retrieving all veterinarians
+2025-11-07 04:43:56 - Retrieving all veterinarians
+Hibernate: 
+    select
+        v1_0.id,
+        v1_0.bio,
+        v1_0.clinic_address,
+        v1_0.clinic_name,
+        v1_0.created_at,
+        v1_0.experience_years,
+        v1_0.is_available,
+        v1_0.license_number,
+        v1_0.photo,
+        v1_0.rating,
+        v1_0.specialty,
+        v1_0.updated_at,
+        v1_0.user_id,
+        v1_0.working_hours 
+    from
+        veterinarians v1_0
+2025-11-07 04:43:56 - Found 1 veterinarians
+Hibernate: 
+    select
+        s1_0.veterinarian_id,
+        s1_0.id,
+        s1_0.day_of_week,
+        s1_0.end_time,
+        s1_0.is_active,
+        s1_0.start_time 
+    from
+        veterinarian_schedules s1_0 
+    where
+        s1_0.veterinarian_id=?
+2025-11-07 04:43:56 - Retrieved 1 veterinarians
+2025-11-07 04:45:16 - Resolving eureka endpoints via configuration
+2025-11-07 04:50:16 - Resolving eureka endpoints via configuration
+2025-11-07 04:55:16 - Resolving eureka endpoints via configuration
+2025-11-07 05:00:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:05:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:10:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:15:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:20:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:25:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:30:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:35:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:40:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:45:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:50:15 - Resolving eureka endpoints via configuration
+2025-11-07 05:55:15 - Resolving eureka endpoints via configuration
+2025-11-07 06:00:15 - Resolving eureka endpoints via configuration
+2025-11-07 07:58:30 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h55m45s315ms).
+2025-11-07 09:32:47 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h34m16s842ms).
+2025-11-07 10:26:46 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=53m22s725ms).
+2025-11-07 10:27:21 - Resolving eureka endpoints via configuration
+2025-11-07 10:35:33 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m12s655ms).
+2025-11-07 10:37:41 - Unregistering application PETHOME-VETERINARIAN-SERVICE with eureka with status DOWN
+2025-11-07 10:37:41 - Saw local status change event StatusChangeEvent [timestamp=1762522661733, current=DOWN, previous=UP]
+2025-11-07 10:37:41 - DiscoveryClient_PETHOME-VETERINARIAN-SERVICE/192.168.1.86:pethome-veterinarian-service:8082: registering service...
+2025-11-07 10:37:41 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-07 10:37:41 - DiscoveryClient_PETHOME-VETERINARIAN-SERVICE/192.168.1.86:pethome-veterinarian-service:8082 - registration status: 204
+2025-11-07 10:37:41 - Graceful shutdown complete
+2025-11-07 10:37:41 - Closing JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    drop table if exists veterinarian_schedules cascade 
+Hibernate: 
+    drop table if exists veterinarians cascade 
+2025-11-07 10:37:42 - HikariPool-1 - Shutdown initiated...
+2025-11-07 10:37:42 - HikariPool-1 - Shutdown completed.
+2025-11-07 10:37:42 - Shutting down DiscoveryClient ...
