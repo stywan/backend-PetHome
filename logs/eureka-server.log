@@ -39,37 +39,35 @@ WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
 
  :: Spring Boot ::                (v3.5.5)
 
-2025-11-17 19:41:39 - Starting EurekaServerApplication using Java 25.0.1 with PID 79844 (/Users/stywan1/Downloads/pethome-backend/eureka-server/target/classes started by stywan1 in /Users/stywan1/Downloads/pethome-backend/eureka-server)
-2025-11-17 19:41:39 - Running with Spring Boot v3.5.5, Spring v6.2.10
-2025-11-17 19:41:39 - The following 1 profile is active: "dev"
-2025-11-17 19:41:39 - Fetching config from server at : http://localhost:8888
-2025-11-17 19:41:39 - Located environment: name=eureka-server, profiles=[default], label=null, version=null, state=null
-2025-11-17 19:41:39 - Fetching config from server at : http://localhost:8888
-2025-11-17 19:41:39 - Located environment: name=eureka-server, profiles=[dev], label=null, version=null, state=null
-2025-11-17 19:41:40 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-17 19:41:40 - Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
-2025-11-17 19:41:40 - BeanFactory id=477805cb-3dfd-3c23-9f80-43406661191a
-2025-11-17 19:41:40 - Tomcat initialized with port 8761 (http)
-2025-11-17 19:41:40 - Starting service [Tomcat]
-2025-11-17 19:41:40 - Starting Servlet engine: [Apache Tomcat/10.1.44]
-2025-11-17 19:41:40 - Initializing Spring embedded WebApplicationContext
-2025-11-17 19:41:40 - Root WebApplicationContext: initialization completed in 991 ms
-2025-11-17 19:41:41 - Using JSON encoding codec LegacyJacksonJson
-2025-11-17 19:41:41 - Using JSON decoding codec LegacyJacksonJson
+2025-11-23 20:08:47 - Starting EurekaServerApplication using Java 25.0.1 with PID 40194 (/Users/stywan1/Downloads/pethome-backend/eureka-server/target/classes started by stywan1 in /Users/stywan1/Downloads/pethome-backend/eureka-server)
+2025-11-23 20:08:47 - Running with Spring Boot v3.5.5, Spring v6.2.10
+2025-11-23 20:08:47 - No active profile set, falling back to 1 default profile: "default"
+2025-11-23 20:08:47 - Fetching config from server at : http://localhost:8888
+2025-11-23 20:08:47 - Located environment: name=eureka-server, profiles=[default], label=null, version=null, state=null
+2025-11-23 20:08:47 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-11-23 20:08:47 - Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2025-11-23 20:08:47 - BeanFactory id=477805cb-3dfd-3c23-9f80-43406661191a
+2025-11-23 20:08:47 - Tomcat initialized with port 8761 (http)
+2025-11-23 20:08:47 - Starting service [Tomcat]
+2025-11-23 20:08:47 - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-11-23 20:08:47 - Initializing Spring embedded WebApplicationContext
+2025-11-23 20:08:47 - Root WebApplicationContext: initialization completed in 950 ms
+2025-11-23 20:08:48 - Using JSON encoding codec LegacyJacksonJson
+2025-11-23 20:08:48 - Using JSON decoding codec LegacyJacksonJson
 WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
 WARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider (file:/Users/stywan1/.m2/repository/com/thoughtworks/xstream/xstream/1.4.20/xstream-1.4.20.jar)
 WARNING: Please consider reporting this to the maintainers of class com.thoughtworks.xstream.converters.reflection.SunUnsafeReflectionProvider
 WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
-2025-11-17 19:41:41 - Using XML encoding codec XStreamXml
-2025-11-17 19:41:41 - Using XML decoding codec XStreamXml
-2025-11-17 19:41:41 - HikariPool-1 - Starting...
-2025-11-17 19:41:41 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6705c650-7423-4dce-9157-4592ca65f765 user=SA
-2025-11-17 19:41:41 - HikariPool-1 - Start completed.
-2025-11-17 19:41:41 - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-17 19:41:41 - HHH000412: Hibernate ORM core version 6.6.26.Final
-2025-11-17 19:41:41 - HHH000026: Second-level cache disabled
-2025-11-17 19:41:41 - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-17 19:41:41 - HHH10001005: Database info:
+2025-11-23 20:08:48 - Using XML encoding codec XStreamXml
+2025-11-23 20:08:48 - Using XML decoding codec XStreamXml
+2025-11-23 20:08:48 - HikariPool-1 - Starting...
+2025-11-23 20:08:48 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6d8be218-a6f6-42f3-b627-488a189a3f0a user=SA
+2025-11-23 20:08:48 - HikariPool-1 - Start completed.
+2025-11-23 20:08:48 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-11-23 20:08:48 - HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-11-23 20:08:48 - HHH000026: Second-level cache disabled
+2025-11-23 20:08:49 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-11-23 20:08:49 - HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -77,108 +75,180 @@ WARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-11-17 19:41:42 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-17 19:41:42 - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-17 19:41:42 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-17 19:41:42 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-2025-11-17 19:41:42 - Setting initial instance status as: STARTING
-2025-11-17 19:41:42 - Initializing Eureka in region us-east-1
-2025-11-17 19:41:42 - Client configured to neither register nor query for data.
-2025-11-17 19:41:42 - Discovery Client initialized at timestamp 1763419302491 with initial instances count: 0
-2025-11-17 19:41:42 - Initializing ...
-2025-11-17 19:41:42 - Adding new peer nodes [http://localhost:8761/eureka/]
-2025-11-17 19:41:42 - Using JSON encoding codec LegacyJacksonJson
-2025-11-17 19:41:42 - Using JSON decoding codec LegacyJacksonJson
-2025-11-17 19:41:42 - Using XML encoding codec XStreamXml
-2025-11-17 19:41:42 - Using XML decoding codec XStreamXml
-2025-11-17 19:41:42 - Replica node URL:  http://localhost:8761/eureka/
-2025-11-17 19:41:42 - Finished initializing remote region registries. All known remote regions: []
-2025-11-17 19:41:42 - Initialized
-2025-11-17 19:41:42 - Exposing 3 endpoints beneath base path '/actuator'
-2025-11-17 19:41:42 - Registering application EUREKA-SERVER with eureka with status UP
-2025-11-17 19:41:42 - isAws returned false
-2025-11-17 19:41:42 - Initialized server context
-2025-11-17 19:41:42 - Got 1 instances from neighboring DS node
-2025-11-17 19:41:42 - Renew threshold is: 1
-2025-11-17 19:41:42 - Changing status to UP
-2025-11-17 19:41:42 - Started Eureka Server
-2025-11-17 19:41:42 - Tomcat started on port 8761 (http) with context path '/'
-2025-11-17 19:41:42 - Updating port to 8761
-2025-11-17 19:41:42 - Started EurekaServerApplication in 3.839 seconds (process running for 4.195)
-2025-11-17 19:41:49 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-11-17 19:41:49 - Initializing Servlet 'dispatcherServlet'
-2025-11-17 19:41:49 - Completed initialization in 4 ms
-2025-11-17 19:41:49 - Registered instance API-GATEWAY/10.31.51.176:api-gateway:8080 with status UP (replication=false)
-2025-11-17 19:41:49 - Registered instance API-GATEWAY/10.31.51.176:api-gateway:8080 with status UP (replication=true)
-2025-11-17 19:42:01 - Registered instance PETHOME-USER-SERVICE/10.31.51.176:pethome-user-service:8081 with status UP (replication=false)
-2025-11-17 19:42:02 - Registered instance PETHOME-USER-SERVICE/10.31.51.176:pethome-user-service:8081 with status UP (replication=true)
-2025-11-17 19:42:12 - Registered instance PETHOME-VETERINARIAN-SERVICE/10.31.51.176:pethome-veterinarian-service:8082 with status UP (replication=false)
-2025-11-17 19:42:12 - Registered instance PETHOME-VETERINARIAN-SERVICE/10.31.51.176:pethome-veterinarian-service:8082 with status UP (replication=true)
-2025-11-17 19:42:20 - Registered instance PETHOME-PET-SERVICE/10.31.51.176:pethome-pet-service:8083 with status UP (replication=false)
-2025-11-17 19:42:20 - Registered instance PETHOME-PET-SERVICE/10.31.51.176:pethome-pet-service:8083 with status UP (replication=true)
-2025-11-17 19:42:31 - Registered instance PETHOME-APPOINTMENT-SERVICE/10.31.51.176:pethome-appointment-service:8084 with status UP (replication=false)
-2025-11-17 19:42:32 - Registered instance PETHOME-APPOINTMENT-SERVICE/10.31.51.176:pethome-appointment-service:8084 with status UP (replication=true)
-2025-11-17 19:42:42 - Running the evict task with compensationTime 0ms
-2025-11-17 19:43:42 - Running the evict task with compensationTime 4ms
-2025-11-17 19:44:42 - Running the evict task with compensationTime 5ms
-2025-11-17 19:45:42 - Running the evict task with compensationTime 4ms
-2025-11-17 19:46:42 - Running the evict task with compensationTime 4ms
-2025-11-17 19:47:42 - Running the evict task with compensationTime 5ms
-2025-11-17 19:48:42 - Running the evict task with compensationTime 2ms
-2025-11-17 19:49:42 - Running the evict task with compensationTime 4ms
-2025-11-17 19:50:42 - Running the evict task with compensationTime 0ms
-2025-11-17 19:51:42 - Running the evict task with compensationTime 2ms
-2025-11-17 19:52:42 - Running the evict task with compensationTime 3ms
-2025-11-17 19:53:42 - Running the evict task with compensationTime 0ms
-2025-11-17 19:54:42 - Running the evict task with compensationTime 1ms
-2025-11-17 19:55:42 - Running the evict task with compensationTime 3ms
-2025-11-17 19:56:42 - Current renewal threshold is : 0
-2025-11-17 19:56:42 - Running the evict task with compensationTime 42ms
-2025-11-17 19:57:42 - Running the evict task with compensationTime 3ms
-2025-11-17 19:58:42 - Running the evict task with compensationTime 4ms
-2025-11-17 19:59:42 - Running the evict task with compensationTime 2ms
-2025-11-17 20:00:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:01:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:02:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:03:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:04:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:05:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:06:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:07:42 - Running the evict task with compensationTime 2ms
-2025-11-17 20:08:42 - Running the evict task with compensationTime 5ms
-2025-11-17 20:09:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:10:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:11:42 - Current renewal threshold is : 0
-2025-11-17 20:11:42 - Running the evict task with compensationTime 1ms
-2025-11-17 20:12:42 - Running the evict task with compensationTime 0ms
-2025-11-17 20:13:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:14:42 - Running the evict task with compensationTime 5ms
-2025-11-17 20:15:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:16:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:17:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:18:42 - Running the evict task with compensationTime 0ms
-2025-11-17 20:19:42 - Running the evict task with compensationTime 1ms
-2025-11-17 20:20:42 - Running the evict task with compensationTime 1ms
-2025-11-17 20:21:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:22:42 - Running the evict task with compensationTime 1ms
-2025-11-17 20:23:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:24:42 - Running the evict task with compensationTime 2ms
-2025-11-17 20:25:42 - Running the evict task with compensationTime 5ms
-2025-11-17 20:26:42 - Current renewal threshold is : 0
-2025-11-17 20:26:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:27:42 - Running the evict task with compensationTime 4ms
-2025-11-17 20:28:42 - Running the evict task with compensationTime 37ms
-2025-11-17 20:29:42 - Running the evict task with compensationTime 2ms
-2025-11-17 20:30:42 - Running the evict task with compensationTime 2ms
-2025-11-17 20:31:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:32:42 - Running the evict task with compensationTime 2ms
-2025-11-17 20:33:42 - Running the evict task with compensationTime 3ms
-2025-11-17 20:34:42 - Running the evict task with compensationTime 2ms
+2025-11-23 20:08:49 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-11-23 20:08:49 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-11-23 20:08:49 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-23 20:08:49 - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-11-23 20:08:49 - Setting initial instance status as: STARTING
+2025-11-23 20:08:49 - Initializing Eureka in region us-east-1
+2025-11-23 20:08:49 - Client configured to neither register nor query for data.
+2025-11-23 20:08:49 - Discovery Client initialized at timestamp 1763939329739 with initial instances count: 0
+2025-11-23 20:08:49 - Initializing ...
+2025-11-23 20:08:49 - Adding new peer nodes [http://localhost:8761/eureka/]
+2025-11-23 20:08:49 - Using JSON encoding codec LegacyJacksonJson
+2025-11-23 20:08:49 - Using JSON decoding codec LegacyJacksonJson
+2025-11-23 20:08:49 - Using XML encoding codec XStreamXml
+2025-11-23 20:08:49 - Using XML decoding codec XStreamXml
+2025-11-23 20:08:49 - Replica node URL:  http://localhost:8761/eureka/
+2025-11-23 20:08:49 - Finished initializing remote region registries. All known remote regions: []
+2025-11-23 20:08:49 - Initialized
+2025-11-23 20:08:49 - Exposing 3 endpoints beneath base path '/actuator'
+2025-11-23 20:08:49 - Registering application EUREKA-SERVER with eureka with status UP
+2025-11-23 20:08:49 - isAws returned false
+2025-11-23 20:08:49 - Initialized server context
+2025-11-23 20:08:49 - Got 1 instances from neighboring DS node
+2025-11-23 20:08:49 - Renew threshold is: 1
+2025-11-23 20:08:49 - Changing status to UP
+2025-11-23 20:08:49 - Started Eureka Server
+2025-11-23 20:08:49 - Tomcat started on port 8761 (http) with context path '/'
+2025-11-23 20:08:49 - Updating port to 8761
+2025-11-23 20:08:49 - Started EurekaServerApplication in 3.877 seconds (process running for 4.324)
+2025-11-23 20:08:56 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-23 20:08:56 - Initializing Servlet 'dispatcherServlet'
+2025-11-23 20:08:56 - Completed initialization in 2 ms
+2025-11-23 20:08:56 - Registered instance API-GATEWAY/192.168.0.28:api-gateway:8080 with status UP (replication=false)
+2025-11-23 20:08:56 - Registered instance API-GATEWAY/192.168.0.28:api-gateway:8080 with status UP (replication=true)
+2025-11-23 20:09:04 - Registered instance PETHOME-USER-SERVICE/192.168.0.28:pethome-user-service:8081 with status UP (replication=false)
+2025-11-23 20:09:04 - Registered instance PETHOME-USER-SERVICE/192.168.0.28:pethome-user-service:8081 with status UP (replication=true)
+2025-11-23 20:09:11 - Registered instance PETHOME-VETERINARIAN-SERVICE/192.168.0.28:pethome-veterinarian-service:8082 with status UP (replication=false)
+2025-11-23 20:09:12 - Registered instance PETHOME-VETERINARIAN-SERVICE/192.168.0.28:pethome-veterinarian-service:8082 with status UP (replication=true)
+2025-11-23 20:09:20 - Registered instance PETHOME-PET-SERVICE/192.168.0.28:pethome-pet-service:8083 with status UP (replication=false)
+2025-11-23 20:09:21 - Registered instance PETHOME-PET-SERVICE/192.168.0.28:pethome-pet-service:8083 with status UP (replication=true)
+2025-11-23 20:09:28 - Registered instance PETHOME-APPOINTMENT-SERVICE/192.168.0.28:pethome-appointment-service:8084 with status UP (replication=false)
+2025-11-23 20:09:29 - Registered instance PETHOME-APPOINTMENT-SERVICE/192.168.0.28:pethome-appointment-service:8084 with status UP (replication=true)
+2025-11-23 20:09:49 - Running the evict task with compensationTime 0ms
+2025-11-23 20:10:49 - Running the evict task with compensationTime 23ms
+2025-11-23 20:11:49 - Running the evict task with compensationTime 3ms
+2025-11-23 20:12:49 - Running the evict task with compensationTime 3ms
+2025-11-23 20:13:49 - Running the evict task with compensationTime 1ms
+2025-11-23 20:14:49 - Running the evict task with compensationTime 1ms
+2025-11-23 20:15:49 - Running the evict task with compensationTime 4ms
+2025-11-23 20:16:49 - Running the evict task with compensationTime 1ms
+2025-11-23 20:17:49 - Running the evict task with compensationTime 0ms
+2025-11-23 20:18:49 - Running the evict task with compensationTime 2ms
+2025-11-23 20:19:49 - Running the evict task with compensationTime 1ms
+2025-11-23 20:20:49 - Running the evict task with compensationTime 5ms
+2025-11-23 20:21:49 - Running the evict task with compensationTime 5ms
+2025-11-23 20:22:49 - Running the evict task with compensationTime 2ms
+2025-11-23 20:23:49 - Current renewal threshold is : 0
+2025-11-23 20:23:49 - Running the evict task with compensationTime 4ms
+2025-11-23 20:24:49 - Running the evict task with compensationTime 1ms
+2025-11-23 20:25:49 - Running the evict task with compensationTime 4ms
+2025-11-23 20:26:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:27:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:28:50 - Running the evict task with compensationTime 1ms
+2025-11-23 20:29:50 - Running the evict task with compensationTime 3ms
+2025-11-23 20:30:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:31:50 - Running the evict task with compensationTime 3ms
+2025-11-23 20:32:50 - Running the evict task with compensationTime 0ms
+2025-11-23 20:33:50 - Running the evict task with compensationTime 1ms
+2025-11-23 20:34:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:35:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:36:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:37:50 - Running the evict task with compensationTime 3ms
+2025-11-23 20:38:49 - Current renewal threshold is : 0
+2025-11-23 20:38:50 - Running the evict task with compensationTime 3ms
+2025-11-23 20:39:50 - Running the evict task with compensationTime 0ms
+2025-11-23 20:40:50 - Running the evict task with compensationTime 1ms
+2025-11-23 20:41:50 - Running the evict task with compensationTime 2ms
+2025-11-23 20:42:50 - Running the evict task with compensationTime 2ms
+2025-11-23 20:43:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:44:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:45:50 - Running the evict task with compensationTime 2ms
+2025-11-23 20:46:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:47:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:48:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:49:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:50:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:51:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:52:50 - Running the evict task with compensationTime 0ms
+2025-11-23 20:53:49 - Current renewal threshold is : 0
+2025-11-23 20:53:50 - Running the evict task with compensationTime 5ms
+2025-11-23 20:54:50 - Running the evict task with compensationTime 1ms
+2025-11-23 20:55:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:56:50 - Running the evict task with compensationTime 2ms
+2025-11-23 20:57:50 - Running the evict task with compensationTime 3ms
+2025-11-23 20:58:50 - Running the evict task with compensationTime 4ms
+2025-11-23 20:59:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:00:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:01:50 - Running the evict task with compensationTime 2ms
+2025-11-23 21:02:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:03:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:04:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:05:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:06:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:07:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:08:49 - Current renewal threshold is : 0
+2025-11-23 21:08:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:09:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:10:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:11:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:12:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:13:50 - Running the evict task with compensationTime 27ms
+2025-11-23 21:14:50 - Running the evict task with compensationTime 26ms
+2025-11-23 21:15:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:16:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:17:50 - Running the evict task with compensationTime 2ms
+2025-11-23 21:18:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:19:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:20:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:21:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:22:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:23:49 - Current renewal threshold is : 0
+2025-11-23 21:23:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:24:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:25:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:26:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:27:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:28:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:29:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:30:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:31:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:32:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:33:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:34:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:35:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:36:50 - Running the evict task with compensationTime 2ms
+2025-11-23 21:37:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:38:49 - Current renewal threshold is : 0
+2025-11-23 21:38:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:39:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:40:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:41:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:42:50 - Running the evict task with compensationTime 8ms
+2025-11-23 21:43:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:44:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:45:50 - Running the evict task with compensationTime 1ms
+2025-11-23 21:46:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:47:50 - Running the evict task with compensationTime 2ms
+2025-11-23 21:48:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:49:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:50:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:51:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:52:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:53:50 - Current renewal threshold is : 0
+2025-11-23 21:53:50 - Running the evict task with compensationTime 2ms
+2025-11-23 21:54:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:55:50 - Running the evict task with compensationTime 3ms
+2025-11-23 21:56:50 - Running the evict task with compensationTime 4ms
+2025-11-23 21:57:50 - Running the evict task with compensationTime 0ms
+2025-11-23 21:58:50 - Running the evict task with compensationTime 5ms
+2025-11-23 21:59:50 - Running the evict task with compensationTime 5ms
+2025-11-23 22:00:50 - Running the evict task with compensationTime 3ms
+2025-11-23 22:01:50 - Running the evict task with compensationTime 22ms
+2025-11-23 22:02:50 - Running the evict task with compensationTime 22ms
+2025-11-23 22:03:50 - Running the evict task with compensationTime 3ms
+2025-11-23 22:04:50 - Running the evict task with compensationTime 5ms
+2025-11-23 22:05:50 - Running the evict task with compensationTime 4ms
+2025-11-23 22:06:50 - Running the evict task with compensationTime 4ms
+2025-11-23 22:07:50 - Running the evict task with compensationTime 5ms
+2025-11-23 22:08:50 - Current renewal threshold is : 0
+2025-11-23 22:08:50 - Running the evict task with compensationTime 3ms
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  53:47 min
-[INFO] Finished at: 2025-11-17T20:35:25-03:00
+[INFO] Total time:  02:00 h
+[INFO] Finished at: 2025-11-23T22:09:17-03:00
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.5.5:run (default-cli) on project eureka-server: Process terminated with exit code: 137 -> [Help 1]
 [ERROR] 
